@@ -38,7 +38,6 @@ var events = {
 
 var _player = new Player();
 var _kawka = new Kawka();
-var _clock = new Clock();
 var _events = new Events(events);
 
 function onYouTubeIframeAPIReady() {
