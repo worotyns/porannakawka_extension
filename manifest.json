@@ -3,7 +3,7 @@
 
   "name": "c[~] Poranna Kawka",
   "description": "This extension gives you one new good music per day. Just makes the morning coffee is better ;)",
-  "version": "0.0.1",
+  "version": "1.1.0",
 
   "browser_action": {
     "default_icon": "app/kawka.png",
