@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "c[~] Poranna Kawka",
+  "description": "This extension gives you one new good music per day. Just makes the morning coffee is better ;)",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "app/kawka.png",
+    "default_popup": "app/popup.html"
+  },
+  "permissions": [
+    "http://porannakawka.com/api/"
+  ],
+  "content_security_policy": "script-src 'self' https://www.youtube.com/ https://s.ytimg.com/; object-src 'self'",
+  "background": {
+    "page": "app/background.html" 
+  }
+}
