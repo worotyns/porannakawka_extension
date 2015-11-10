@@ -39,7 +39,7 @@ var Player = (function() {
     },
     
     onStateChange: function(event){
-      if(event.data === 0) {          
+      if(event.data === YT.PlayerState.ENDED) {          
           _events.trigger('prev');
       }
     },
@@ -52,7 +52,7 @@ var Player = (function() {
     },
     
     onError: function(){
-      
+      _events.trigger('prev');
     },
     
     onSongChange: function() {
@@ -70,7 +70,7 @@ var Player = (function() {
     },
     
     isPlayed: function() {
-      return (this.player.getPlayerState() === 1);
+      return (this.player.getPlayerState() === YT.PlayerState.PLAYING);
     },
     
     load: function(url) {
